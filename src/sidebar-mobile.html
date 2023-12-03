@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sidebar Mobile</title>
+  </head>
+  <body class="bg-[#F4F6F9] font-inter">
+    <div class="flex">
+      <!-- Start Sidebar -->
+      <div
+        id="side-mobile"
+        class="fixed hidden h-[100vh] w-[100px] shrink-0 flex-col justify-between border-r-[1px] border-black/5 bg-white sm:flex"
+      >
+        <div
+          id="side-toggle"
+          class="absolute -right-[15px] top-[88px] cursor-pointer rounded-lg bg-[#0C7CDC] p-1"
+        >
+          <img src="../assets/chevron-left.svg" alt="chevron-left" />
+        </div>
+
+        <div class="flex flex-col items-center gap-y-6 p-6">
+          <div class="flex flex-col py-3 text-xl font-bold text-[#1168BC]">
+            BOX
+          </div>
+          <div class="flex flex-col gap-2">
+            <div class="flex items-center">
+              <img src="../assets/lightbulb.svg" alt="lightbulb" />
+            </div>
+            <div class="flex items-center">
+              <img src="../assets/gear2.svg" alt="lightbulb" />
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-y-2">
+            <p class="font-semibold tracking-[0.6px] text-[#9AA0C8]">K</p>
+            <div class="flex items-center">
+              <img src="../assets/clipboard.svg" alt="clipboard" />
+            </div>
+            <div class="flex items-center justify-between">
+              <div class="flex items-center">
+                <img src="../assets/download.svg" alt="lightbulb" />
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-y-2">
+            <p class="font-semibold tracking-[0.6px] text-[#9AA0C8]">K</p>
+            <div class="flex items-center">
+              <img src="../assets/message-dots.svg" alt="message-dots" />
+            </div>
+            <div class="flex items-center">
+              <img src="../assets/tag.svg" alt="tag" />
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-y-2">
+            <p class="font-semibold tracking-[0.6px] text-[#9AA0C8]">B</p>
+            <div class="flex items-center">
+              <img src="../assets/desktop-pc.svg" alt="desktop-pc" />
+            </div>
+            <div class="flex items-center">
+              <img src="../assets/grid-plus.svg" alt="grid-plus" />
+            </div>
+          </div>
+          <div class="flex flex-col items-center gap-y-2">
+            <p class="font-semibold tracking-[0.6px] text-[#9AA0C8]">U</p>
+            <div class="flex items-center">
+              <img src="../assets/bx-money.svg" alt="bx-money" />
+            </div>
+          </div>
+        </div>
+        <div class="p-4">
+          <div
+            class="relative flex flex-col items-center justify-center gap-y-3 rounded-xl bg-[#0C7CDC] px-3 py-6 text-white"
+          >
+            <div
+              class="absolute -top-5 flex items-start justify-center rounded-full border-2 border-[#0C7CDC] bg-white p-2"
+            >
+              <img src="../assets/rocket.svg" alt="rocket" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Sidebar -->
+
+      <div class="w-full sm:ml-[100px]">
+        <!-- Start Navbar -->
+        <nav class="flex items-center justify-between bg-white p-6">
+          <div class="flex items-center gap-x-3">
+            <label for="proyek" class="text-sm font-medium leading-[21px]"
+              >Proyek saat ini:</label
+            >
+            <select
+              name="proyek"
+              id="proyek"
+              class="flex w-[216px] rounded-lg border-[1px] border-[#E8EAF7] bg-[#F4F6F9] px-3 py-2 text-sm font-medium leading-[21px] text-[#0C7CDC]"
+            >
+              <option value="#">Kontraktor Property</option>
+              <option value="#">Kontraktor Property</option>
+            </select>
+          </div>
+          <div>
+            <img src="../assets/avatar.png" alt="avatar" />
+          </div>
+        </nav>
+        <!-- End Navbar -->
+
+        <!-- Start Content -->
+        <main class="p-6">
+          <!-- Start Header -->
+          <header class="">
+            <h1 class="text-xl font-bold text-[#1168BC]">
+              Daftar Testimoni Anda
+            </h1>
+            <p class="text-sm leading-7 text-[#515A82]">
+              Lihat dan Kelola testimoni dari pelanggan anda
+            </p>
+          </header>
+          <!-- End Header -->
+
+          <div class="my-3 h-[1px] border-[1px] bg-[#C6CAEB]"></div>
+
+          <!-- Start Main Body -->
+          <div
+            class="round rounded-xl bg-white py-6 shadow-[0_8px_25px_0_rgba(0,0,0,0.10)]"
+          >
+            <!-- Start Header Card -->
+            <div class="flex items-center justify-between px-6">
+              <div class="flex items-center gap-x-3">
+                <div class="rounded-lg border-[1px] border-[#9AA0C8] p-2">
+                  <img src="../assets/filter.svg" alt="filter" />
+                </div>
+                <div class="relative">
+                  <div class="absolute left-2.5 top-[12px]">
+                    <img
+                      src="../assets/search-outline.png"
+                      class="w-4"
+                      alt=""
+                    />
+                  </div>
+                  <input
+                    class="w-full rounded-lg border-[1px] border-[#C6CAEB] bg-[#FFF] px-10 py-2"
+                    type="text"
+                    placeholder="Cari nama, email, testimoni, dll"
+                  />
+                </div>
+              </div>
+              <div class="rounded-lg border-[1px] border-[#9AA0C8] p-2">
+                <img
+                  src="../assets/adjustments-vertical.svg"
+                  alt="adjustments-vertical"
+                />
+              </div>
+            </div>
+            <!-- End Header Card -->
+
+            <div class="my-6 h-[1px] border-[1px] bg-[#C6CAEB]"></div>
+
+            <!-- Start Body Card -->
+            <div class="flex h-[664px] transform items-center justify-center">
+              <div class="flex flex-col items-center justify-center gap-y-6">
+                <div>
+                  <img src="../assets/no-data 1.svg" alt="no-data" />
+                </div>
+                <div class="text-center">
+                  <h1 class="text-xl font-bold text-[#1168BC]">
+                    Kamu belum punya tetimoni
+                  </h1>
+                  <p class="text-sm leading-7 text-[#515A82]">
+                    Untuk mendapatkan testimoni buat dulu formulirnya
+                  </p>
+                </div>
+                <div class="flex gap-x-2 rounded-lg bg-[#0C7CDC] px-3 py-2">
+                  <img src="../assets/newspaper.svg" alt="newspaper" />
+                  <p class="font-medium leading-[18px] text-white">
+                    Buat Formulir
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- End Body Card -->
+          </div>
+          <!-- End Main Body -->
+        </main>
+        <!-- End Content -->
+      </div>
+    </div>
+  </body>
+</html>

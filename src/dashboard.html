@@ -1,0 +1,200 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="../dist/style.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Dashboard</title>
+  </head>
+  <body class="bg-[#F4F6F9] font-inter">
+    <!-- Start Navbar -->
+    <nav class="flex justify-between bg-white p-[24px]">
+      <div>
+        <img src="../assets//logo.svg" alt="Logo" />
+      </div>
+      <div>
+        <img src="../assets//avatar.png" alt="Avatar" />
+      </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Start Content -->
+    <main class="p-[24px]">
+      <!-- Start Header -->
+      <header class="mb flex items-center justify-between">
+        <h1 class="text-xl font-bold leading-7 text-[#1168BC]">Dasbor Utama</h1>
+        <div>
+          <button
+            id="modal-button"
+            class="rounded-[8px] bg-[#0C7CDC] px-[20px] py-[10px] text-white transition hover:bg-[#0C7CDC]/80"
+          >
+            Buat Project Baru
+          </button>
+        </div>
+      </header>
+      <!-- End Header -->
+
+      <div class="my-6 h-[1px] border-[1px] bg-[#C6CAEB]"></div>
+
+      <!-- Start Card-->
+      <div class="flex flex-wrap gap-6">
+        <div
+          class="w-full rounded-xl bg-white px-6 pb-6 pt-12 shadow-[0_8px_25px_0_rgba(0,0,0,0.10)] md:w-[355px]"
+        >
+          <h2 class="mb-3 text-xl font-bold leading-7 text-[#353D60]">
+            Mengoptimalkan Pengalaman Belajar Daring
+          </h2>
+          <p
+            class="mb-6 text-base font-normal leading-7 tracking-[.32px] text-[#737BA5]"
+          >
+            Fokus proyek ini adalah meningkatkan pengalaman belajar daring. Kami
+            menciptakan platform yang ramah pengguna dan mengintegrasikan ber...
+          </p>
+          <div class="gap mb-6 flex gap-x-6">
+            <div class="flex gap-x-1">
+              <img src="../assets/file.svg" alt="file" />
+              <p
+                class="text-center text-base font-semibold tracking-[.8px] text-[#515A82]"
+              >
+                23
+              </p>
+            </div>
+            <div class="flex gap-x-1">
+              <img src="../assets//video-camera.svg" alt="camera" />
+              <p>10</p>
+            </div>
+          </div>
+          <div class="flex items-center justify-between self-stretch">
+            <div
+              class="flex items-center gap-x-1 rounded-md bg-[#EEECFB] px-3 py-0.5"
+            >
+              <img src="../assets//clock.svg" alt="clock" />
+              <p>2 Hari yang lalu</p>
+            </div>
+            <div class="flex gap-x-3">
+              <img src="../assets/gear.svg" alt="gear" />
+              <img src="../assets//trash-bin.svg" alt="trash" />
+            </div>
+          </div>
+        </div>
+        <div
+          class="w-full rounded-xl bg-white px-6 pb-6 pt-12 shadow-[0_8px_25px_0_rgba(0,0,0,0.10)] md:w-[355px]"
+        >
+          <h2 class="mb-3 text-xl font-bold leading-7 text-[#353D60]">
+            Mengoptimalkan Pengalaman Belajar Daring
+          </h2>
+          <p
+            class="mb-6 text-base font-normal leading-7 tracking-[.32px] text-[#737BA5]"
+          >
+            Fokus proyek ini adalah meningkatkan pengalaman belajar daring. Kami
+            menciptakan platform yang ramah pengguna dan mengintegrasikan ber...
+          </p>
+          <div class="gap mb-6 flex gap-x-6">
+            <div class="flex gap-x-1">
+              <img src="../assets/file.svg" alt="file" />
+              <p
+                class="text-center text-base font-semibold tracking-[.8px] text-[#515A82]"
+              >
+                23
+              </p>
+            </div>
+            <div class="flex gap-x-1">
+              <img src="../assets//video-camera.svg" alt="camera" />
+              <p>10</p>
+            </div>
+          </div>
+          <div class="flex items-center justify-between self-stretch">
+            <div
+              class="flex items-center gap-x-1 rounded-md bg-[#EEECFB] px-3 py-0.5"
+            >
+              <img src="../assets//clock.svg" alt="clock" />
+              <p>2 Hari yang lalu</p>
+            </div>
+            <div class="flex gap-x-3">
+              <img src="../assets/gear.svg" alt="gear" />
+              <img src="../assets//trash-bin.svg" alt="trash" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Card -->
+    </main>
+    <!-- End Content -->
+
+    <!-- Start Footer -->
+    <footer
+      class="fixed bottom-0 left-0 right-0 flex justify-between bg-white p-6"
+    >
+      <p class="tracking-[0.32px] text-[#515A82]">
+        © 2023
+        <span class="font-semibold tracking-[0.8px] text-[#0C7CDC]"
+          >TestiBox</span
+        >
+        All Rights Reserved.
+      </p>
+      <p class="text-sm tracking-[0.28px] text-[#515A82]">Version 1.0.0</p>
+    </footer>
+    <!-- End Footer -->
+
+    <!-- Start Modal -->
+    <div id="overlay" class="absolute inset-0 z-10 hidden bg-black/50"></div>
+    <div
+      id="modal"
+      class="fixed left-1/2 top-1/2 z-20 hidden -translate-x-1/2 -translate-y-1/2 transform"
+    >
+      <div class="w-[416px] rounded-lg border-[1px] border-[#E8EAF7] bg-white">
+        <div class="border-b-[1px] border-[#E8EAF7] p-6">
+          <h1 class="text-lg font-semibold leading-[27px]">
+            Buat Project Baru
+          </h1>
+        </div>
+        <div class="flex flex-col gap-y-5 border-b-[1px] border-[#E8EAF7] p-6">
+          <div class="flex flex-col gap-y-2">
+            <label for="name" class="text-sm font-medium leading-[21px]"
+              >Nama Project <span class="text-[#E23B2C]">*</span>
+            </label>
+            <input
+              class="rounded-[8px] border-[1px] border-[#C6CAEB] px-4 py-2 placeholder:text-sm placeholder:font-normal placeholder:leading-[21px] placeholder:text-[#737BA5] focus:border-blue-500 focus:outline-none"
+              type="text"
+              id="name"
+              placeholder="cth: Project Ulasan"
+            />
+          </div>
+          <div class="flex flex-col gap-y-2">
+            <label for="name" class="text-sm font-medium leading-[21px]"
+              >Deskripsi Project <span class="text-[#E23B2C]">*</span>
+            </label>
+            <textarea
+              class="rounded-[8px] border-[1px] border-[#C6CAEB] px-4 py-2 placeholder:text-sm placeholder:font-normal placeholder:leading-[21px] placeholder:text-[#737BA5] focus:border-blue-500 focus:outline-none"
+              id="name"
+              rows="7"
+              placeholder="cth: ini adalah proejct tentang ulasan di pt xyz"
+            ></textarea>
+          </div>
+        </div>
+        <div class="flex gap-x-3 p-6">
+          <button
+            class="rounded-lg bg-[#0C7CDC] px-5 py-2.5 text-white transition hover:bg-[#0C7CDC]/80"
+          >
+            Buat Project
+          </button>
+          <button
+            id="modal-close"
+            class="rounded-lg border-[1px] border-[#E8EAF7] bg-white px-5 py-2.5 text-black hover:bg-gray-100"
+          >
+            Kembali
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal -->
+
+    <script src="./script.js"></script>
+  </body>
+</html>
